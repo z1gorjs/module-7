@@ -1,0 +1,234 @@
+@font-face {
+    font-family: Montserrat, sans-serif;
+    src: url("../fonts/montserrat-v14-latin-regular.woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Montserrat, sans-serif;
+    src: url("../fonts/montserrat-v14-latin-800.woff");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PT Serif Caption", serif;
+    src: url("../fonts/PTSerifCaption-Italic.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Slab", serif;
+    src: url("../fonts/roboto-slab-v9-latin-regular.woff2");
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    width: 950px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.menu-item {
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.menu-item:not(:first-child) {
+    margin-left: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: #222222;
+}
+
+a:hover {
+    color: #fed136;
+}
+
+.services-container {
+    width: 950px;
+    margin: 90px auto;
+}
+
+.services-title, .services-description {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.services-title, .contact-title {
+    font-family: Montserrat, sans-serif;
+    font-size: 40px;
+    line-height: 75px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.services-title {
+    color: #222222;
+}
+
+.contact-title {
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.services-description, .contact-descriprion {
+    font-family: "PT Serif Caption", serif;
+    font-style: italic;
+    font-size: 16px;
+    color: #777777;
+}
+
+.service-items {
+    display: flex;
+    justify-content: center;
+    margin: 77px auto;
+}
+
+.service-item:not(:nth-child(3)) {
+    margin-right: 35px;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 290px;
+    height: 232px;
+}
+
+.service-item-icon {
+    height: 68px;
+    width: 68px;
+    border-radius: 50%;
+    border: 2px solid #fed136;
+}
+
+.basket, .laptop, .locked {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.basket {
+    background-image: url("../img/icon-basket.png");
+}
+
+.laptop {
+    background-image: url("../img/icon-laptop.png");
+}
+
+.locked {
+    background-image: url("../img/icon-locked.png");
+}
+
+.service-item-title {
+    font-family: Montserrat, sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    color: #222222;
+}
+
+.service-item-text {
+    font-family: "Roboto Slab", serif;
+    font-size: 14px;
+    color: #777777;
+    margin-top: 0;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 675px;
+    margin: 0;
+    background-color: #222222;
+    background-image: url("../img/bg-map.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-top: 110px;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 940px;
+    height: 385px;
+    margin-top: 77px;
+    background-color: transparent;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+}
+
+.data-info {
+    width: 455px;
+    height: 54px;
+    border-radius: 5px;
+}
+
+.data-info:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.message-text {
+    width: 455px;
+    height: 238px;
+    padding: 0;
+    border-radius: 5px;
+}
+
+.message-text::placeholder, .data-info::placeholder {
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 14px;
+    color: #bbbbbb;
+    padding-left: 21px;
+    padding-top: 19px;
+}
+
+input[name="email"]:focus:invalid,
+textarea[name='message']:focus:invalid,
+input[name="name"]:focus:invalid {
+outline-color: #ff3319;
+transition: outline-color .5s;
+}
+
+input[name="email"]:focus:valid,
+textarea[name='message']:focus:valid,
+input[name="name"]:focus:valid {
+outline-color: #0fa316;
+transition: outline-color .4s;
+}
+
+.form-button {
+    margin: 0 auto;
+    width: 240px;
+    height: 65px;
+    border: none;
+    border-radius: 5px;
+    background: #fed136;
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 18px;
+    color: #ffffff;
+}
